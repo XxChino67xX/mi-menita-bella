@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b2c">
+  <meta name="description" content="Una pequeña página hecha con cariño para Mi Menita Hermosa.">
+  <title>Para Mi Menita Hermosa 🌙≽^• ˕ • ྀི≼</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="starfield" aria-hidden="true" id="starfield"></div>
+  <div class="nebula nebula-one" aria-hidden="true"></div>
+  <div class="nebula nebula-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">✦ <span>un pequeño universo</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#carta">Carta</a><a href="#recuerdos">Recuerdos</a><a href="#cancion">Canciones</a><a href="#detallitos">Detallitos</a><a href="#razones">Razones</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="moon-wrap" aria-hidden="true"><div class="moon"></div><span class="moon-sparkle sparkle-a">✧</span><span class="moon-sparkle sparkle-b">✦</span></div>
+      <p class="eyebrow">HECHO CON CARIÑO, SOLO PARA TI</p>
+      <h1>Para <span>Mi Menita<br class="mobile-break"> Hermosa</span></h1>
+      <p class="hero-copy">Si pudiera regalarte una parte del universo,<br class="desktop-break"> elegiría una estrella para recordarte lo especial que eres.</p>
+      <a class="button button-primary" href="#carta">Hay algo que quiero decirte <span>↓</span></a>
+      <div class="hero-cute" aria-label="Unos detallitos tiernos para ti"><span>🎀</span><span>🐱</span><span>🌧️</span><span>🐶</span><span>🌸</span></div>
+    </section>
+
+    <section class="section letter-section" id="carta">
+      <div class="section-heading"><p class="eyebrow">UN MENSAJITO PARA MI BBCITA</p><h2>De mi corazón al tuyo <span>♡</span></h2><p>Hay cosas bonitas que merecen decirse despacito.</p></div>
+      <article class="letter-card">
+        <div class="letter-top"><span>✧ una carta para mi bbcita ✧</span><span class="letter-heart">♡</span></div>
+        <div class="letter-content" id="letterContent" hidden>
+          <p>Mi Menita Hermosa:</p>
+          <p>Quería regalarte un rinconcito de internet que fuera solo para ti, un lugar con estrellas, una luna y palabras que te recuerden lo mucho que significas para mí.Siempre llenas mis dias tristes en recuerdos bonitos.</p>
+          <p>Ojalá que cuando tengas un día complicado, esta pequeña página te saque una sonrisa. Y cuando tengas un día bonito, que te recuerde que todavía hay muchísimas cosas lindas por compartir.</p>
+          <p>Gracias por ser tú, por los momentos que hemos compartido y por hacer que las cosas sencillas puedan sentirse especiales a tu lado . No necesito que el universo sea perfecto; me basta con poder compartir un pedacito de él contigo.</p>
+          <p class="letter-signoff">Con mucho amor :3,<br><strong>Tu niño</strong> 💜</p>
+        </div>
+        <div class="letter-closed" id="letterClosed"><div class="envelope-icon">💌</div><p>Hay unas palabras guardadas aquí para ti.</p><button class="button button-primary" id="openLetter" type="button">Abrir mi carta</button></div>
+        <button class="text-button" id="closeLetter" type="button" hidden>Cerrar la carta ↑</button>
+      </article>
+    </section>
+
+    <section class="section" id="recuerdos">
+      <div class="section-heading"><p class="eyebrow">PEQUEÑOS INSTANTES, GRANDES RECUERDOS</p><h2>Nuestro rinconcito <span>✧</span></h2><p>Agrega aquí fotos que te hagan sonreír cuando las vuelvas a mirar.</p></div>
+      <div class="gallery">
+        <figure class="photo-card photo-tall"><img src="fotos/recuerdo1.png" alt="Para la mujer que siempre me saca una sonrisa" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>♡</span><strong>Nuestro momento</strong><small>Tu foto está guardada como <code>recuerdo1.png</code></small></div><figcaption>La mujer que siempre me saca una sonrisa</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/recuerdo2.png" alt="Mi motivacion de todos los dias " loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>✧</span><strong>Una sonrisa</strong><small>Tu foto está guardada como <code>recuerdo2.png</code></small></div><figcaption>Mi motivacion de todos los dias</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/recuerdo3.png" alt="La mujer mas hermosa del mundo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>☾</span><strong>Un instante nuestro</strong><small>Tu foto está guardada como <code>recuerdo3.png</code></small></div><figcaption>La mujer mas hermosa del mundo</figcaption></figure>
+      </div>
+      <p class="section-tip">Esta pequeña parte de la pagina la dedique para recordarte lo especial que eres y lo hermosa que eres aunque casi no se te vea la carita jsjsjjs pero aun asi espero te guste amor ❤️.</p>
+    </section>
+
+    <section class="section music-section" id="cancion">
+      <div class="section-heading"><p class="eyebrow">DALE PLAY :3</p><h2>Piendo en ti al escuchar... <span>♫</span></h2><p>Dos melodías especiales para Mi Menita Bella.</p></div>
+      <div class="song-list">
+        <article class="song-card">
+          <div class="song-cover"><img src="musica/tristellafondo.png" alt="Portada de Tristella" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="cover-placeholder">🌙<span>♡</span></div></div>
+          <div class="song-details"><p class="music-kicker">CANCIÓN ESPECIAL #1</p><h3>Tristella — Esperón</h3><p class="song-dedication">esta cancion me recuerda mucho a ti mi amor ❤️</p>
+            <audio class="song-player" controls preload="metadata"><source src="musica/tristella-esperon.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio>
+          </div>
+        </article>
+        <article class="song-card">
+          <div class="song-cover"><img src="musica/pielcanelafondo.png" alt="Portada de Piel Canela" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="cover-placeholder">🎀<span>♫</span></div></div>
+          <div class="song-details"><p class="music-kicker">CANCIÓN ESPECIAL #2</p><h3>Piel Canela — Cuco</h3><p class="song-dedication">Una melodía más que quiero compartir contigo, mi amor 💜</p>
+            <audio class="song-player" controls preload="metadata"><source src="musica/piel-canela-cuco.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cute-section" id="detallitos">
+      <div class="section-heading"><p class="eyebrow">COSITAS TIERNAS QUE ME HACEN PENSAR EN TI</p><h2>Tu pequeño mundo bonito <span>🎀</span></h2><p>Un rinconcito inspirado en los moñitos, los gatitos tiernos, la lluvia y los perritos.</p></div>
+      <div class="cute-grid">
+        <article class="cute-card kitty-card"><span class="cute-emoji">🐱🎀</span><h3>Un toque de gatitos</h3><p>Un moñito rosa, ternura y un montón de cariño, como un detallito hecho especialmente para ti.</p></article>
+        <article class="cute-card rain-card"><span class="cute-emoji">🌧️☂️</span><h3>Lluvia de estrellitas</h3><p>Que hasta los días lluviosos tengan algo bonito como tu . Pulsa el botón del principio para activar o detener la lluvia.</p></article>
+        <article class="cute-card dog-card"><span class="cute-emoji">🐶🐾</span><h3>Perritossss :3</h3><p>Patitas y cariño incondicional como el mio hacia ti. Un recordatorio de que mereces muchas cosas bonitas y bellas.</p></article>
+        <article class="cute-card melody-card"><span class="cute-emoji">🎀🌸</span><h3>Un detalle estilo Hello Kitty</h3><p>Flores, gatitos y dulzura para decorar este pequeño universo que preparé pensando en ti.</p></article>
+      </div>
+      <p class="section-tip">Se que esto no son detalles tan lindos pero me hacen recordar a lo tierna y bella que sos.</p>
+    </section>
+    <section class="section reasons-section" id="razones">
+      <div class="section-heading"><p class="eyebrow">PODRÍA ESCRIBIR MUCHAS MÁS</p><h2>Razones por las que eres especial <span>♡</span></h2><p>Pequeñas cosas que te hacen brillar como persona .</p></div>
+      <div class="reasons-grid">
+        <article class="reason-card"><span>☾</span><h3>Tu forma de ser</h3><p>Para mi amor eres la mujer mas especial , linda y bella que jamas eh visto para mi siempre seras mi persona favorita y mi mundo</p></article>
+        <article class="reason-card"><span>✧</span><h3>Tu sonrisa</h3><p>Porque puede convertir un mal rato en el mejor momento</p></article>
+        <article class="reason-card"><span>♡</span><h3>Los pequeños detalles</h3><p>Cada parte de ti es un detalle que quiero descubrir cada dia de mi vida y se que yo no te doy detalles lindos pero siempre tendras mi amor incondiconal.</p></article>
+        <article class="reason-card"><span>☄</span><h3>Lo que compartimos</h3><p>Desde que te conoci as llenado de felicidad mi vida y mi corazon nose que haria sin tu amor y calor </p></article>
+        <article class="reason-card"><span>✿</span><h3>Tu manera de brillar</h3><p>Tienes una forma de ser tan bonita , quizas no pienses lo mismo sobre ti pero para mi siempre eras , eres y seras la persona con la personalidad mas bonita del mundo .</p></article>
+        <article class="reason-card"><span>∞</span><h3>Siempre hay más</h3><p>Porque todas las razones por las que te hacen especial no cabrian en una sola pagina.</p></article>
+      </div>
+    </section>
+
+    <section class="final-note section"><div class="final-star">✦</div><p class="eyebrow">ANTES DE QUE TE VAYAS</p><h2>Que nunca te falten<br><span>motivos para brillar.</span></h2><p>Y que esta pequeña página te recuerde lo especial que eres.</p><a href="#inicio" class="button button-outline">Volver a las estrellas ↑</a></section>
+  </main>
+  <footer><p>Hecho con <span>♥</span> para Mi Menita Hermosa</p><small>Se que no es mucho pero es de todo corazón para ti mi amor ojala te guste</small></footer>
+  <button class="top-button" id="topButton" type="button" aria-label="Volver arriba">↑</button>
+</body>
+</html>
